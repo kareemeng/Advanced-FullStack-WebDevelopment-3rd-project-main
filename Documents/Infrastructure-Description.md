@@ -2,12 +2,12 @@
 
 # FrontEnd
 
-- http://george-udagram.s3-website-us-east-1.amazonaws.com
-- "arn:aws:s3:::george-udagram" using the S3 To contain our FrontEnd Angular Project
+- http://kareem-udagram.s3-website-us-east-1.amazonaws.com
+- "arn:aws:s3:::kareem-udagram" using the S3 To contain our FrontEnd Angular Project
 
 # database
 
-- "database-1.cxyku6tqond9.us-east-1.rds.amazonaws.com" Using RDS To Initialize Our DataBase
+- "database-1.chl3c4yf8djv.us-east-1.rds.amazonaws.com" Using RDS To Initialize Our DataBase
 
 # BackEnd
 
