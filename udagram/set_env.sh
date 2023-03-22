@@ -1,0 +1,11 @@
+export POSTGRES_USERNAME=postgres
+export POSTGRES_PASSWORD=postgres
+export POSTGRES_HOST=database-1.chl3c4yf8djv.us-east-1.rds.amazonaws.com
+export POSTGRES_DB=postgres
+export AWS_BUCKET=arn:aws:s3:::kareem-udagram
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_PROFILE=default
+export JWT_SECRET=mysecretstring
+export URL=http://kareem-dev.us-east-1.elasticbeanstalk.com
+export AWS_ACCESS_KEY_ID=AKIAVMLNH3NV32PZAIJY
+export AWS_SECRET_ACCESS_KEY=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
