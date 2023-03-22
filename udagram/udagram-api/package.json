@@ -11,8 +11,9 @@
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
+    "setenv": "eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME && eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD && eb setenv POSTGRES_DB=$POSTGRES_DB && eb setenv POSTGRES_HOST=$POSTGRES_HOST && eb setenv AWS_BUCKET=$AWS_BUCKET && eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION && eb setenv AWS_PROFILE=$AWS_PROFILE && eb setenv JWT_SECRET=$JWT_SECRET && eb setenv URL=$URL && eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID && eb setenv AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && eb init kareem --platform Node.js --region us-east-1 && eb list && eb use kareem-dev && eb deploy",
+    "deploy": "npm run build && eb init kareem --platform Node.js --region us-east-1 && eb list && eb use kareem-dev && eb deploy && npm run setenv",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\""
   },
